@@ -24,6 +24,13 @@ app.get('/', function(req, res){
   res.sendfile('index.html', {root: app.settings.views});
 });
 */
-var port = process.ENV.port || 4000
+/*var port = process.ENV.PORT || 4000
 app.listen(port);
 console.log('Listening on port'+ port);
+*/
+
+var server = app.listen(process.env.PORT || 4000, function () {
+    var port = server.address().port;
+    console.log("App now running on port", port);
+  });
+});
