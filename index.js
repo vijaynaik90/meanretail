@@ -24,5 +24,6 @@ app.get('/', function(req, res){
   res.sendfile('index.html', {root: app.settings.views});
 });
 */
-app.listen(4000);
-console.log('Listening on port 4000!');
+var port = process.ENV.port || 4000
+app.listen(port);
+console.log('Listening on port'+ port);
