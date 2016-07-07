@@ -1,0 +1,276 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose readDependencies loading dependencies from C:\MEAN Stack App\retail\server\package.json
+5 warn package.json @ No repository field.
+6 warn package.json @ No license field.
+7 verbose install where, deps [ 'C:\\MEAN Stack App\\retail\\server',
+7 verbose install   [ 'body-parser',
+7 verbose install     'express',
+7 verbose install     'express-session',
+7 verbose install     'http-status',
+7 verbose install     'mongoose',
+7 verbose install     'morgan',
+7 verbose install     'passport',
+7 verbose install     'passport-facebook',
+7 verbose install     'stripe',
+7 verbose install     'superagent',
+7 verbose install     'underscore',
+7 verbose install     'wagner-core',
+7 verbose install     'gulp',
+7 verbose install     'gulp-mocha',
+7 verbose install     'mocha' ] ]
+8 verbose install where, peers [ 'C:\\MEAN Stack App\\retail\\server', [] ]
+9 verbose installManyTop reading for lifecycle C:\MEAN Stack App\retail\server\package.json
+10 info preinstall @
+11 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\body-parser\package.json
+12 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\express\package.json
+13 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\express-session\package.json
+14 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\gulp\package.json
+15 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\gulp-mocha\package.json
+16 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\http-status\package.json
+17 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\mocha\package.json
+18 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\mongoose\package.json
+19 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\morgan\package.json
+20 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\passport\package.json
+21 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\passport-facebook\package.json
+22 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\stripe\package.json
+23 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\superagent\package.json
+24 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\underscore\package.json
+25 verbose installManyTop reading scoped package data from C:\MEAN Stack App\retail\server\node_modules\wagner-core\package.json
+26 info package.json http-status@0.1.8 No license field.
+27 info package.json stripe@3.3.4 No license field.
+28 info package.json passport-facebook@2.0.0 No license field.
+29 info package.json wagner-core@0.1.0 license should be a valid SPDX license expression
+30 info package.json mocha@2.2.4 No license field.
+31 info package.json superagent@1.2.0 No license field.
+32 info package.json underscore@1.5.2 No license field.
+33 verbose readDependencies loading dependencies from C:\MEAN Stack App\retail\server\package.json
+34 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\body-parser\package.json
+35 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\express\package.json
+36 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\express-session\package.json
+37 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\gulp\package.json
+38 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\gulp-mocha\package.json
+39 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\http-status\package.json
+40 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\mocha\package.json
+41 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\mongoose\package.json
+42 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\morgan\package.json
+43 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\passport\package.json
+44 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\passport-facebook\package.json
+45 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\stripe\package.json
+46 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\superagent\package.json
+47 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\underscore\package.json
+48 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\wagner-core\package.json
+49 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\.bin\gulp\package.json
+50 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\.bin\gulp.cmd\package.json
+51 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\.bin\mocha\package.json
+52 verbose targetResolver reading package data from C:\MEAN Stack App\retail\server\node_modules\.bin\mocha.cmd\package.json
+53 verbose already installed skipping stripe@3.3.4 C:\MEAN Stack App\retail\server
+54 verbose already installed skipping superagent@1.2.0 C:\MEAN Stack App\retail\server
+55 verbose already installed skipping underscore@1.5.2 C:\MEAN Stack App\retail\server
+56 verbose already installed skipping wagner-core@0.1.0 C:\MEAN Stack App\retail\server
+57 silly cache add args [ 'gulp@3.8.11', null ]
+58 verbose cache add spec gulp@3.8.11
+59 silly cache add parsed spec Result {
+59 silly cache add   raw: 'gulp@3.8.11',
+59 silly cache add   scope: null,
+59 silly cache add   name: 'gulp',
+59 silly cache add   rawSpec: '3.8.11',
+59 silly cache add   spec: '3.8.11',
+59 silly cache add   type: 'version' }
+60 silly addNamed gulp@3.8.11
+61 verbose addNamed "3.8.11" is a plain semver version for gulp
+62 silly mapToRegistry name gulp
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'gulp',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   name: 'gulp',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/gulp
+67 verbose addNameVersion registry:https://registry.npmjs.org/gulp not in flight; fetching
+68 verbose already installed skipping gulp-mocha@2.0.1 C:\MEAN Stack App\retail\server
+69 verbose already installed skipping mocha@2.2.4 C:\MEAN Stack App\retail\server
+70 verbose already installed skipping body-parser@1.12.4 C:\MEAN Stack App\retail\server
+71 verbose already installed skipping express@4.12.3 C:\MEAN Stack App\retail\server
+72 verbose already installed skipping express-session@1.11.2 C:\MEAN Stack App\retail\server
+73 verbose already installed skipping http-status@0.1.8 C:\MEAN Stack App\retail\server
+74 verbose already installed skipping mongoose@4.0.3 C:\MEAN Stack App\retail\server
+75 verbose already installed skipping morgan@1.5.3 C:\MEAN Stack App\retail\server
+76 verbose already installed skipping passport@0.2.2 C:\MEAN Stack App\retail\server
+77 verbose already installed skipping passport-facebook@2.0.0 C:\MEAN Stack App\retail\server
+78 verbose request uri https://registry.npmjs.org/gulp
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 11:49:40 PM
+81 verbose request id edb458cc1d663180
+82 verbose etag "5ST3VS2PAVZTTEDIOZ2WRPGWA"
+83 http request GET https://registry.npmjs.org/gulp
+84 http 304 https://registry.npmjs.org/gulp
+85 verbose headers { date: 'Wed, 06 Jul 2016 03:49:41 GMT',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   'cache-control': 'max-age=300',
+85 verbose headers   etag: '"5ST3VS2PAVZTTEDIOZ2WRPGWA"',
+85 verbose headers   age: '236',
+85 verbose headers   connection: 'keep-alive',
+85 verbose headers   'x-served-by': 'cache-jfk1045-JFK',
+85 verbose headers   'x-cache': 'HIT',
+85 verbose headers   'x-cache-hits': '6',
+85 verbose headers   'x-timer': 'S1467776981.129616,VS0,VE0',
+85 verbose headers   vary: 'Accept-Encoding' }
+86 silly get cb [ 304,
+86 silly get   { date: 'Wed, 06 Jul 2016 03:49:41 GMT',
+86 silly get     via: '1.1 varnish',
+86 silly get     'cache-control': 'max-age=300',
+86 silly get     etag: '"5ST3VS2PAVZTTEDIOZ2WRPGWA"',
+86 silly get     age: '236',
+86 silly get     connection: 'keep-alive',
+86 silly get     'x-served-by': 'cache-jfk1045-JFK',
+86 silly get     'x-cache': 'HIT',
+86 silly get     'x-cache-hits': '6',
+86 silly get     'x-timer': 'S1467776981.129616,VS0,VE0',
+86 silly get     vary: 'Accept-Encoding' } ]
+87 verbose etag https://registry.npmjs.org/gulp from cache
+88 verbose get saving gulp to C:\Users\Vijaysimha\AppData\Roaming\npm-cache\registry.npmjs.org\gulp\.cache.json
+89 verbose correctMkdir C:\Users\Vijaysimha\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+90 silly cache afterAdd gulp@3.8.11
+91 verbose afterAdd C:\Users\Vijaysimha\AppData\Roaming\npm-cache\gulp\3.8.11\package\package.json not in flight; writing
+92 verbose correctMkdir C:\Users\Vijaysimha\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+93 verbose afterAdd C:\Users\Vijaysimha\AppData\Roaming\npm-cache\gulp\3.8.11\package\package.json written
+94 silly install resolved [ { name: 'gulp',
+94 silly install resolved     description: 'The streaming build system',
+94 silly install resolved     version: '3.8.11',
+94 silly install resolved     homepage: 'http://gulpjs.com',
+94 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+94 silly install resolved     author:
+94 silly install resolved      { name: 'Fractal',
+94 silly install resolved        email: 'contact@wearefractal.com',
+94 silly install resolved        url: 'http://wearefractal.com/' },
+94 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+94 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion' ],
+94 silly install resolved     bin: { gulp: './bin/gulp.js' },
+94 silly install resolved     man: [ 'gulp.1' ],
+94 silly install resolved     dependencies:
+94 silly install resolved      { archy: '^1.0.0',
+94 silly install resolved        chalk: '^0.5.0',
+94 silly install resolved        deprecated: '^0.0.1',
+94 silly install resolved        'gulp-util': '^3.0.0',
+94 silly install resolved        interpret: '^0.3.2',
+94 silly install resolved        liftoff: '^2.0.1',
+94 silly install resolved        minimist: '^1.1.0',
+94 silly install resolved        orchestrator: '^0.3.0',
+94 silly install resolved        'pretty-hrtime': '^0.2.0',
+94 silly install resolved        semver: '^4.1.0',
+94 silly install resolved        tildify: '^1.0.0',
+94 silly install resolved        v8flags: '^2.0.2',
+94 silly install resolved        'vinyl-fs': '^0.3.0' },
+94 silly install resolved     devDependencies:
+94 silly install resolved      { coveralls: '^2.7.0',
+94 silly install resolved        'graceful-fs': '^3.0.0',
+94 silly install resolved        istanbul: '^0.3.0',
+94 silly install resolved        jshint: '^2.5.0',
+94 silly install resolved        'jshint-stylish': '^1.0.0',
+94 silly install resolved        'marked-man': '^0.1.3',
+94 silly install resolved        mkdirp: '^0.5.0',
+94 silly install resolved        mocha: '^2.0.1',
+94 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+94 silly install resolved        q: '^1.0.0',
+94 silly install resolved        rimraf: '^2.2.5',
+94 silly install resolved        should: '^4.0.0' },
+94 silly install resolved     scripts:
+94 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+94 silly install resolved        lint: 'jshint lib bin index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules',
+94 silly install resolved        test: 'npm run-script lint && mocha --reporter spec',
+94 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+94 silly install resolved     engineStrict: true,
+94 silly install resolved     engines: { node: '>= 0.9' },
+94 silly install resolved     licenses: [ [Object] ],
+94 silly install resolved     gitHead: '84df40b0faabc2b61d576154fd1145e2146377ca',
+94 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+94 silly install resolved     _id: 'gulp@3.8.11',
+94 silly install resolved     _shasum: 'd557e0a7283eb4136491969b0497767972f1d28a',
+94 silly install resolved     _from: 'gulp@3.8.11',
+94 silly install resolved     _npmVersion: '2.5.1',
+94 silly install resolved     _nodeVersion: '0.12.0',
+94 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+94 silly install resolved     maintainers: [ [Object], [Object] ],
+94 silly install resolved     dist:
+94 silly install resolved      { shasum: 'd557e0a7283eb4136491969b0497767972f1d28a',
+94 silly install resolved        tarball: 'https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz' },
+94 silly install resolved     directories: {},
+94 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz',
+94 silly install resolved     readme: 'ERROR: No README data found!' } ]
+95 info install gulp@3.8.11 into C:\MEAN Stack App\retail\server
+96 info installOne gulp@3.8.11
+97 verbose installOne of gulp to C:\MEAN Stack App\retail\server not in flight; installing
+98 verbose correctMkdir C:\Users\Vijaysimha\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+99 verbose lock using C:\Users\Vijaysimha\AppData\Roaming\npm-cache\_locks\gulp-b913705c0e61ee6e.lock for C:\MEAN Stack App\retail\server\node_modules\gulp
+100 silly install write writing gulp 3.8.11 to C:\MEAN Stack App\retail\server\node_modules\gulp
+101 verbose unbuild node_modules\gulp
+102 info preuninstall gulp@3.9.1
+103 info uninstall gulp@3.9.1
+104 verbose unbuild rmStuff gulp@3.9.1 from C:\MEAN Stack App\retail\server\node_modules
+105 silly gentlyRm C:\MEAN Stack App\retail\server\node_modules\.bin\gulp.cmd is being gently removed
+106 silly gentlyRm verifying C:\MEAN Stack App\retail\server is an npm working directory
+107 silly gentlyRm containing path C:\MEAN Stack App\retail\server is under npm's control, in C:\MEAN Stack App\retail\server
+108 silly gentlyRm deletion target C:\MEAN Stack App\retail\server\node_modules\.bin\gulp.cmd is under C:\MEAN Stack App\retail\server
+109 verbose gentlyRm vacuuming from C:\MEAN Stack App\retail\server\node_modules\.bin\gulp.cmd up to C:\MEAN Stack App\retail\server
+110 silly vacuum-fs removing C:\MEAN Stack App\retail\server\node_modules\.bin\gulp.cmd
+111 silly vacuum-fs quitting because other entries in C:\MEAN Stack App\retail\server\node_modules\.bin
+112 silly gentlyRm C:\MEAN Stack App\retail\server\node_modules\.bin\gulp is being gently removed
+113 silly gentlyRm verifying C:\MEAN Stack App\retail\server is an npm working directory
+114 silly gentlyRm containing path C:\MEAN Stack App\retail\server is under npm's control, in C:\MEAN Stack App\retail\server
+115 silly gentlyRm deletion target C:\MEAN Stack App\retail\server\node_modules\.bin\gulp is under C:\MEAN Stack App\retail\server
+116 verbose gentlyRm vacuuming from C:\MEAN Stack App\retail\server\node_modules\.bin\gulp up to C:\MEAN Stack App\retail\server
+117 silly vacuum-fs removing C:\MEAN Stack App\retail\server\node_modules\.bin\gulp
+118 silly vacuum-fs quitting because other entries in C:\MEAN Stack App\retail\server\node_modules\.bin
+119 info postuninstall gulp@3.9.1
+120 silly gentlyRm C:\MEAN Stack App\retail\server\node_modules\gulp is being purged from base C:\MEAN Stack App\retail\server
+121 verbose gentlyRm don't care about contents; nuking C:\MEAN Stack App\retail\server\node_modules\gulp
+122 silly vacuum-fs purging C:\MEAN Stack App\retail\server\node_modules\gulp
+123 silly vacuum-fs quitting because other entries in C:\MEAN Stack App\retail\server\node_modules
+124 verbose tar unpack C:\Users\Vijaysimha\AppData\Roaming\npm-cache\gulp\3.8.11\package.tgz
+125 verbose tar unpacking to C:\MEAN Stack App\retail\server\node_modules\gulp
+126 silly gentlyRm C:\MEAN Stack App\retail\server\node_modules\gulp is being purged
+127 verbose gentlyRm don't care about contents; nuking C:\MEAN Stack App\retail\server\node_modules\gulp
+128 silly vacuum-fs Error: EPERM: operation not permitted, lstat 'C:\MEAN Stack App\retail\server\node_modules\gulp'
+128 silly vacuum-fs     at Error (native)
+129 verbose unlock done using C:\Users\Vijaysimha\AppData\Roaming\npm-cache\_locks\gulp-b913705c0e61ee6e.lock for C:\MEAN Stack App\retail\server\node_modules\gulp
+130 verbose stack Error: EPERM: operation not permitted, lstat 'C:\MEAN Stack App\retail\server\node_modules\gulp'
+130 verbose stack     at Error (native)
+131 verbose cwd C:\MEAN Stack App\retail\server
+132 error Windows_NT 10.0.10586
+133 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save"
+134 error node v4.4.3
+135 error npm  v2.15.1
+136 error path C:\MEAN Stack App\retail\server\node_modules\gulp
+137 error code EPERM
+138 error errno -4048
+139 error syscall lstat
+140 error Error: EPERM: operation not permitted, lstat 'C:\MEAN Stack App\retail\server\node_modules\gulp'
+140 error     at Error (native)
+140 error  { [Error: EPERM: operation not permitted, lstat 'C:\MEAN Stack App\retail\server\node_modules\gulp']
+140 error   errno: -4048,
+140 error   code: 'EPERM',
+140 error   syscall: 'lstat',
+140 error   path: 'C:\\MEAN Stack App\\retail\\server\\node_modules\\gulp' }
+141 error Please try running this command again as root/Administrator.
+142 verbose exit [ -4048, true ]
+143 verbose unbuild node_modules\gulp
+144 silly gentlyRm C:\MEAN Stack App\retail\server\node_modules\gulp is being purged from base C:\MEAN Stack App\retail\server
+145 verbose gentlyRm don't care about contents; nuking C:\MEAN Stack App\retail\server\node_modules\gulp
+146 silly vacuum-fs Error: EPERM: operation not permitted, lstat 'C:\MEAN Stack App\retail\server\node_modules\gulp'
+146 silly vacuum-fs     at Error (native)
+147 error error rolling back Error: EPERM: operation not permitted, lstat 'C:\MEAN Stack App\retail\server\node_modules\gulp'
+147 error error rolling back     at Error (native)
+147 error error rolling back  { [Error: EPERM: operation not permitted, lstat 'C:\MEAN Stack App\retail\server\node_modules\gulp']
+147 error error rolling back   errno: -4048,
+147 error error rolling back   code: 'EPERM',
+147 error error rolling back   syscall: 'lstat',
+147 error error rolling back   path: 'C:\\MEAN Stack App\\retail\\server\\node_modules\\gulp' }
