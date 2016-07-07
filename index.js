@@ -1,54 +1,28 @@
-var controllers = require('./controllers');
-var directives = require('./directives');
-var services = require('./services');
-var _ = require('underscore');
+var express = require('express');
+var wagner = require('wagner-core');
 
-var components = angular.module('mean-retail.components', ['ng']);
+require('./models')(wagner);
+require('./dependencies')(wagner);
 
-_.each(controllers, function(controller, name) {
-  components.controller(name, controller);
+var app = express();
+
+app.use(require('morgan')());
+
+wagner.invoke(require('./auth'), { app: app });
+
+app.use('/api/v1', require('./api')(wagner));
+
+// Serve up static HTML pages from the file system.
+// For instance, '/6-examples/hello-http.html' in
+// the browser will show the '../6-examples/hello-http.html'
+// file.
+app.use(express.static('./public', { maxAge: 4 * 60 * 60 * 1000 /* 2hrs */ }));
+/*
+app.set('views', __dirname + '/../');
+
+app.get('/', function(req, res){
+  res.sendfile('index.html', {root: app.settings.views});
 });
-
-_.each(directives, function(directive, name) {
-  components.directive(name, directive);
-});
-
-_.each(services, function(factory, name) {
-  components.factory(name, factory);
-});
-
-components.factory('Search',function(){
-	
-	return{
-		Field:''
-		
-	};
-});
-
-var app = angular.module('mean-retail', ['mean-retail.components', 'ngRoute']);
-
-app.config(function($routeProvider) {
-  $routeProvider.
-	when('/',{
-		redirectTo:'/index.html'
-	}).
-	when('/body',{
-		templateUrl: 'templates/body.html'
-	}).
-    when('/category/:category', {
-      templateUrl: 'templates/category_view.html'
-    }).
-    when('/checkout', {
-      template: '<checkout></checkout>'
-    }).	
-    when('/product/:id', {
-      template: '<product-details></product-details>'
-    }).
-	when('/logout',{		
-		template:'<logout></logout>'
-	}).
-	when('/contact',{		
-		templateUrl:'templates/contact.html'
-	});
-	
-});
+*/
+app.listen(4000);
+console.log('Listening on port 4000!');
