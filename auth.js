@@ -1,7 +1,7 @@
 function setupAuth(User, Config, app) {
   var passport = require('passport');
   var FacebookStrategy = require('passport-facebook').Strategy;
-
+  var port = process.env.PORT || 4000;
   // High level serialize/de-serialize configuration for passport
   passport.serializeUser(function(user, done) {
     done(null, user._id);
@@ -18,7 +18,7 @@ function setupAuth(User, Config, app) {
     {
       clientID: Config.facebookClientId,
       clientSecret: Config.facebookClientSecret,
-      callbackURL: 'http://localhost:4000/auth/facebook/callback',
+      callbackURL: 'http://localhost:port/auth/facebook/callback',
 	  profileFields: ['id', 'email', 'name']
     },
     function(accessToken, refreshToken, profile, done) {
@@ -56,13 +56,13 @@ function setupAuth(User, Config, app) {
       passport.authenticate('facebook',
         {
           scope: ['email'],
-          callbackURL: 'http://localhost:4000/auth/facebook/callback?redirect=' + redirect
+          callbackURL: 'http://localhost:port/auth/facebook/callback?redirect=' + redirect
         })(req, res, next);
     });
 
   app.get('/auth/facebook/callback',
     function(req, res, next) {
-      var url = 'http://localhost:4000/auth/facebook/callback?redirect=' +
+      var url = 'http://localhost:port/auth/facebook/callback?redirect=' +
         encodeURIComponent(req.query.redirect);
       passport.authenticate('facebook', { callbackURL: url })(req, res, next);
     },
