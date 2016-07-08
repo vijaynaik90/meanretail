@@ -101,6 +101,10 @@ exports.CategoryTreeController = function($scope, $routeParams, $http) {
 exports.CheckoutController = function($scope, $user, $http) {
   // For update cart
   $scope.user = $user;
+  $scope.itemPresent = false;
+  if($scope.user.user.data.cart){
+	  $scope.itemPresent = true;
+  }
 
   $scope.updateCart = function() {
     $http.
@@ -123,6 +127,8 @@ exports.CheckoutController = function($scope, $user, $http) {
 	  return total;
 	  
   };
+  
+  
 
   // For checkout
   Stripe.setPublishableKey('pk_test_My48YKo8VXpEHgbT3UeFWvdB');

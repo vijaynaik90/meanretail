@@ -39,6 +39,10 @@
       </div>
 	 	  
     </div>
+	
+  </div>
+ 
+    <div style="clear: both"></div>
 	<div style = "clear:both">
 	<table>
 	<tr>
@@ -49,10 +53,8 @@
 	  </tr>
 	</table>	  
 	</div>
-    <div style="clear: both"></div>
-  </div>
   
-  <div class="update-cart-button" ng-click="updateCart()">
+  <div class="update-cart-button" ng-click="updateCart()" ng-disabled="itemPresent">
     Update Cart
   </div>
   <div class="checkout1">

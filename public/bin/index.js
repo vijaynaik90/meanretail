@@ -84,6 +84,11 @@ exports.CategoryTreeController = function($scope, $routeParams, $http) {
 exports.CheckoutController = function($scope, $user, $http) {
   // For update cart
   $scope.user = $user;
+  
+  $scope.itemPresent = false;
+  if($scope.user.user.data.cart){
+	  $scope.itemPresent = true;
+  }
 
   $scope.updateCart = function() {
     $http.
