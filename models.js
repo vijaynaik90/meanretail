@@ -4,7 +4,7 @@ var _ = require('underscore');
 module.exports = function(wagner) {
   mongoose.connect(process.env.MONGOLAB_URI ||'mongodb://localhost:27017/test');
 
-  wagner.factory('db', function() {
+  wagner.factory('db', function(){
     return mongoose;
   });
 
