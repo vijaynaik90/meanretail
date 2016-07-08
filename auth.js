@@ -18,7 +18,7 @@ function setupAuth(User, Config, app) {
     {
       clientID: Config.facebookClientId,
       clientSecret: Config.facebookClientSecret,
-      callbackURL: 'http://localhost:port/auth/facebook/callback',
+      callbackURL: 'https://murmuring-hollows-77695.herokuapp.com/auth/facebook/callback',
 	  profileFields: ['id', 'email', 'name']
     },
     function(accessToken, refreshToken, profile, done) {
@@ -56,13 +56,13 @@ function setupAuth(User, Config, app) {
       passport.authenticate('facebook',
         {
           scope: ['email'],
-          callbackURL: 'http://localhost:port/auth/facebook/callback?redirect=' + redirect
+          callbackURL: 'https://murmuring-hollows-77695.herokuapp.com/auth/facebook/callback?redirect=' + redirect
         })(req, res, next);
     });
 
   app.get('/auth/facebook/callback',
     function(req, res, next) {
-      var url = 'http://localhost:port/auth/facebook/callback?redirect=' +
+      var url = 'https://murmuring-hollows-77695.herokuapp.com/auth/facebook/callback?redirect=' +
         encodeURIComponent(req.query.redirect);
       passport.authenticate('facebook', { callbackURL: url })(req, res, next);
     },
