@@ -56,7 +56,7 @@ function setupAuth(User, Config, app) {
       passport.authenticate('facebook',
         {
           scope: ['email'],
-          callbackURL: 'http://murmuring-hollows-77695.herokuapp.com/auth/facebook/callback?redirect=' + redirect
+          callbackURL: 'https://murmuring-hollows-77695.herokuapp.com/auth/facebook/callback?redirect=' + redirect
         })(req, res, next);
     });
 
