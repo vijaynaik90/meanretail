@@ -102,7 +102,7 @@ exports.CheckoutController = function($scope, $user, $http) {
   // For update cart
   $scope.user = $user;
   $scope.itemPresent = false;
-  if($scope.user.user.data.cart){
+  if($scope.user.user.data.cart.length >0){
 	  $scope.itemPresent = true;
   }
 
