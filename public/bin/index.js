@@ -86,7 +86,7 @@ exports.CheckoutController = function($scope, $user, $http) {
   $scope.user = $user;
   
   $scope.itemPresent = false;
-  if($scope.user.user.data.cart.length>0){
+  if($user.user.data.cart.length>0){
 	  $scope.itemPresent = true;
   }
 
@@ -230,7 +230,7 @@ exports.checkout = function() {
 exports.navBar = function() {
   return {
     controller: 'NavBarController',
-    templateUrl: 'templates/navBarBoot.html'
+    templateUrl: 'templates/nav.html'
   };
 };
 
@@ -297,6 +297,9 @@ app.config(function($routeProvider) {
     when('/product/:id', {
       template: '<product-details></product-details>'
     }).
+	when('/login',{
+		templateUrl:'templates/login.html'		
+	}).
 	when('/logout',{
 		template:'<logout></logout>'		
 	}).

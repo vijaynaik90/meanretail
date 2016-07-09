@@ -1,6 +1,6 @@
 <div class="checkout-wrapper">
 
-  <div  ng-repeat="item in user.user.data.cart"
+  <div ng-repeat="item in user.user.data.cart"
         class="checkout-product">
     <div class="image-left">
       <img ng-src="{{item.product.pictures[0]}}">
@@ -36,16 +36,15 @@
 		</table>		        
       </div>	 	  
     </div>	
+	<div style="clear: both"></div>
   </div>   
-      
-   
-    <div style="clear: both"></div>
-	
-	<div style = "clear:both" >
+  
+	<div style = "clear:left" >
 	<table>
 	<tr>
-	  <td>Total:</td>
-	  <td>{{total() | currency}}
+	  <td></td>
+	  <td><span style="background-color: #F633FF">Total:</span></td>
+	  <td><span style="background-color: #F633FF">{{total() | currency}}</span>
 	  </td>
 	  <td></td>
 	  </tr>
@@ -54,7 +53,7 @@
 	
 	
   
-  <div class="update-cart-button" ng-click="updateCart()" ng-show="itemPresent">
+  <div class="update-cart-button" ng-click="updateCart()">
     Update Cart
   </div>
   <div class="checkout1">

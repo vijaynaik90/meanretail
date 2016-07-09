@@ -36,7 +36,7 @@ exports.logout = function() {
 exports.navBar = function() {
   return {
     controller: 'NavBarController',
-    templateUrl: 'templates/navBarBoot.html'
+    templateUrl: 'templates/navbar.html'
   };
 };
 

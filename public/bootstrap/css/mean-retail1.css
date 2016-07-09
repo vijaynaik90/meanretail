@@ -13,17 +13,12 @@ body {
   margin: auto;
   position: relative;
   background-color: #013363;
-  background-image: url("/images/altBG.gif");
+  background-image: url("/images/home-bg.jpg");
   margin-top: 30px;
   border-radius: 5px;
   padding: 10px;
 }
 
-
-a {
-  color: #A93226;
-  text-decoration: none;
-}
 
 .cart-button {
   cursor: pointer;
@@ -36,7 +31,7 @@ a {
 }
 
 /** nav bar **/
-
+/*
 .nav-bar {
   width: 100%;
   position: relative;
@@ -49,7 +44,7 @@ a {
   margin: auto;
   position: relative;
 }
-
+*/
 .logo {
   display: inline-block;
 }
@@ -60,6 +55,7 @@ a {
   margin-top: 5px;
 }
 
+/*
 .nav-bar .title {
   display: inline-block;
   color: #A93226;
@@ -67,6 +63,7 @@ a {
   position: relative;
   top: -3px;
 }
+*/
 
 .checkout {
   position: absolute;
@@ -387,5 +384,7 @@ a {
   border-bottom: 1px solid #666666;
   border-radius: 3px;
 }
+
+
 
 }
