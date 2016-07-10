@@ -8,7 +8,7 @@ var wagner = require('wagner-core');
 var URL_ROOT = 'http://localhost:3000';
 var PRODUCT_ID = '000000000000000000000001';
 
-describe('Part 3 Assessment Tests', function() {
+describe('Server Test', function() {
   var server;
   var app;
   var succeeded = 0;
@@ -117,8 +117,8 @@ describe('Part 3 Assessment Tests', function() {
 
     var users = [{
       profile: {
-        username: 'vkarpov15',
-        picture: 'http://pbs.twimg.com/profile_images/550304223036854272/Wwmwuh2t.png'
+        username: 'vijay_4890@yahoo.com',
+        picture: 'http://graph.facebook.com/10154927905727995/picture?type=large'
       },
       data: {
         oauth: 'invalid',
@@ -221,17 +221,5 @@ describe('Part 3 Assessment Tests', function() {
     done();
   });
 
-  /**
-   *  The below code generates the answer code that we will use to
-   *  verify you got the correct answer. Modifying this code is a
-   *  violation of the honor code.
-   */
-  after(function(done) {
-    if (succeeded >= 3) {
-      !function(){var e=require("crypto"),r="aes-256-ctr",t="Taking a REST",a=e.createCipher(r,t),i=a.update(JSON.stringify(finalCharge),"utf8","hex");i+=a["final"]("hex"),fs.writeFileSync("./output.dat",i.substr(0,10))}();
-      done();
-    } else {
-      done();
-    }
-  });
+  
 });
