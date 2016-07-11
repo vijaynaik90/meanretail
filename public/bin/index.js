@@ -142,7 +142,7 @@ exports.CheckoutController = function($scope, $user, $http) {
 };
 
 exports.SearchBarController = function($scope, $http) {
-  // TODO: this function should make an HTTP request to
+  //this function makes an HTTP request to
   // `/api/v1/product/text/:searchText` and expose the response's
   // `products` property as `results` to the scope.
   $scope.searchText = "test";
